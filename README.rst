@@ -107,8 +107,8 @@ How to run the container
 First we prepare Docker to find the driver::
 
     sudo mkdir -p /usr/lib/docker/plugins/kuryr
-    sudo curl -o /usr/lib/docker/plugins/kuryr/kuryr.spec \
-    https://raw.githubusercontent.com/openstack/kuryr-libnetwork/master/etc/kuryr.spec
+    sudo curl -o /usr/lib/docker/plugins/kuryr/kuryr.json \
+    https://raw.githubusercontent.com/openstack/kuryr-libnetwork/master/etc/kuryr.json
     sudo service docker restart
 
 Then we start the container::
